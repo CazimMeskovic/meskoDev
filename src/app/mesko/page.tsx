@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactSection from '@/component/contact';
 
 const HomePage = () => {
   return (
@@ -190,7 +189,7 @@ const HomePage = () => {
 </div>
 
 {/* Kontakt Sekcija */}
-{/* <section id='kontakt' className="py-20 px-8 bg-gray-900">
+<section className="py-20 px-8 bg-gray-900">
   <h2 className="text-4xl font-bold text-center mb-12">Kontaktiraj me</h2>
   <form className="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
     <div className="mb-4">
@@ -203,17 +202,14 @@ const HomePage = () => {
     </div>
     <div className="mb-4">
       <label htmlFor="message" className="block text-sm font-medium text-gray-400">Poruka</label>
-       <textarea id="message" rows="4" className="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required></textarea>
-     </div>
+{/*       <textarea id="message" rows="4" className="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required></textarea>
+ */}    </div>
     <button type="submit" className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
       Pošalji poruku
     </button>
   </form>
 </section>
- */}
- <section id='kontakt'>
-<ContactSection />
-</section>
+
 
     </main>
   );
