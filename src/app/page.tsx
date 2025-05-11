@@ -1,6 +1,11 @@
 import React from 'react';
 import ContactSection from '@/component/contact';
 import StatsSection from '@/component/StatsSection';
+import ahi from "../images/ahi.png"
+import hrana from "../images/hrana33.jpg"
+import sandin from "../images/sandin.png"
+import Image from 'next/image';
+
 
 const HomePage = () => {
   return (
@@ -80,17 +85,43 @@ const HomePage = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Naš portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/portfolio1.jpg" alt="Projekat 1" className="w-full h-40 object-cover rounded" />
+          {/*   <img src="/portfolio1.jpg" alt="Projekat 1" className="w-full h-40 object-cover rounded" /> */}
+          <a href='https://ahi-proizvodi.vercel.app/' >
+             <Image
+                                width={500}
+                                height={300}
+                                src={ahi}
+                                alt="ahi"
+                            className="w-full h-40 object-cover rounded" 
+                              />
+          </a>
+             
             <h3 className="mt-4 text-xl font-semibold">Projekat 1</h3>
             <p className="mt-2 text-gray-400">Inovativni projekat koji je redefinisao korisničko iskustvo.</p>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/portfolio2.jpg" alt="Projekat 2" className="w-full h-40 object-cover rounded" />
+             <a href='https://hrana.vercel.app/' >
+             <Image
+                                width={500}
+                                height={300}
+                                src={hrana}
+                                alt="ahi"
+                            className="w-full h-40 object-cover rounded" 
+                              />
+          </a>
             <h3 className="mt-4 text-xl font-semibold">Projekat 2</h3>
             <p className="mt-2 text-gray-400">Napredno rješenje za savremene biznise.</p>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <img src="/portfolio3.jpg" alt="Projekat 3" className="w-full h-40 object-cover rounded" />
+              <a href='https://ambicon5.vercel.app/en' >
+             <Image
+                                width={500}
+                                height={300}
+                                src={sandin}
+                                alt="ahi"
+                            className="w-full h-40 object-cover rounded" 
+                              />
+          </a>
             <h3 className="mt-4 text-xl font-semibold">Projekat 3</h3>
             <p className="mt-2 text-gray-400">Kreativan pristup digitalnoj transformaciji.</p>
           </div>
@@ -102,12 +133,12 @@ const HomePage = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Šta kažu naši klijenti</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <p className="text-gray-400">"Meško Development je našu viziju pretvorio u stvarnost. Topla preporuka!"</p>
-            <h4 className="mt-4 text-lg font-semibold text-blue-400">- Klijent A</h4>
+            <p className="text-gray-400">"Cazim je radio brzo i napravio odličan posao na web stranici."</p>
+            <h4 className="mt-4 text-lg font-semibold text-blue-400">Frode Fikke</h4>
           </div>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <p className="text-gray-400">"Njihovo znanje i posvećenost su neuporedivi. Bilo je zadovoljstvo raditi s njima!"</p>
-            <h4 className="mt-4 text-lg font-semibold text-purple-400">- Klijent B</h4>
+            <p className="text-gray-400">"Cazima poznajem dugi niz godina – izuzetno je posvećen i uporan u svom radu. Uspješno je savladao tražene vještine i realizovao  kvalitetne projekate. Smatram da je vrlo sposoban i talentovan web developer"</p>
+            <h4 className="mt-4 text-lg font-semibold text-purple-400">Eldin Dezmic</h4>
           </div>
         </div>
       </section>
