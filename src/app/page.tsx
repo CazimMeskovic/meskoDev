@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactSection from '@/component/contact';
+import StatsSection from '@/component/StatsSection';
 
 const HomePage = () => {
   return (
@@ -15,7 +16,8 @@ const HomePage = () => {
             Kreiramo budućnost web iskustava koristeći najnoviju tehnologiju.
           </p>
            <button className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg">
-            Započni sada
+            <a href="#kontakt">  Započni sada</a>
+          
           </button> 
    {/*        <div className="text-center py-10">
   <button className="relative px-6 py-3 text-white font-semibold rounded-lg bg-gray-800 overflow-hidden group">
@@ -27,35 +29,35 @@ const HomePage = () => {
       </section>
 
       {/* O meni sekcija */}
-      <section className="py-20 px-8 bg-gray-950">
-        <h2 className="text-4xl font-bold text-center mb-6">O meni</h2>
+      <section id='onama' className="py-20 px-8 bg-gray-950">
+        <h2 className="text-4xl font-bold text-center mb-6">O nama</h2>
         <p className="max-w-3xl mx-auto text-gray-300 text-lg text-center">
-          Zovem se Meško i bavim se razvojem modernih web aplikacija koristeći najnovije tehnologije kao što su React, Next.js, Node.js, Tailwind CSS i druge.
-          Moj cilj je stvarati funkcionalne, brze i vizuelno impresivne sajtove koji zadovoljavaju stvarne potrebe korisnika.
+          Bavimo se razvojem modernih web aplikacija koristeći najnovije tehnologije kao što su React, Next.js, Node.js, Tailwind CSS i druge.
+          Naš cilj je stvarati funkcionalne, brze i vizuelno impresivne sajtove koji zadovoljavaju stvarne potrebe korisnika.
         </p>
       </section>
 
       {/* Moji ciljevi sekcija */}
       <section className="py-20 px-8 bg-gradient-to-r from-gray-800 to-gray-900">
-        <h2 className="text-4xl font-bold text-center mb-12">Moji ciljevi</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Naši ciljevi</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-cyan-400">Kontinuirano učenje</h3>
-            <p className="text-gray-400 mt-2">Uvijek težim učenju novih tehnologija i poboljšanju postojećih vještina.</p>
+            <p className="text-gray-400 mt-2">Uvijek učimo i unapređujemo se kroz proces izrade sajtova i aplikacija zajedno sa našim klijentima.</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-lime-400">Zadovoljni klijenti</h3>
-            <p className="text-gray-400 mt-2">Cilj mi je isporučiti rješenja koja korisnicima olakšavaju svakodnevni rad.</p>
+            <p className="text-gray-400 mt-2">Cilj nam je isporučiti rješenja koja korisnicima olakšavaju svakodnevni rad.</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-pink-400">Kvalitetan kod</h3>
-            <p className="text-gray-400 mt-2">Pišem čitljiv, skalabilan i održiv kod koji olakšava budući razvoj i nadogradnju.</p>
+            <p className="text-gray-400 mt-2">Pišemo čitljiv, skalabilan i održiv kod koji olakšava budući razvoj i nadogradnju.</p>
           </div>
         </div>
       </section>
 
       {/* Usluge sekcija */}
-      <section className="py-20 px-8">
+      <section id='servis' className="py-20 px-8">
         <h2 className="text-4xl font-bold text-center mb-12">Naše usluge</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
@@ -74,7 +76,7 @@ const HomePage = () => {
       </section>
 
       {/* Portfolio sekcija */}
-      <section className="py-20 px-8 bg-gray-900">
+      <section id='portfolio' className="py-20 px-8 bg-gray-900">
         <h2 className="text-4xl font-bold text-center mb-12">Naš portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
@@ -112,7 +114,7 @@ const HomePage = () => {
 
       {/* Tehnologije koje koristim */}
       <section className="py-20 px-8 bg-gray-950">
-        <h2 className="text-4xl font-bold text-center mb-12">Tehnologije koje koristim</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Tehnologije koje koristimo</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-lg font-semibold text-gray-300">
           <div className="hover:text-blue-400 transition">Next.js</div>
           <div className="hover:text-purple-400 transition">React</div>
@@ -120,13 +122,13 @@ const HomePage = () => {
           <div className="hover:text-pink-400 transition">Tailwind CSS</div>
           <div className="hover:text-green-400 transition">Node.js</div>
           <div className="hover:text-teal-400 transition">MongoDB</div>
-          <div className="hover:text-indigo-400 transition">Framer Motion</div>
+          <div className="hover:text-indigo-400 transition">JavaScript</div>
           <div className="hover:text-red-400 transition">Git & GitHub</div>
         </div>
       </section>
 
       {/* Brza statistika */}
-      <section className="py-20 px-8">
+   {/*    <section className="py-20 px-8">
         <h2 className="text-4xl font-bold text-center mb-12">Brza statistika</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
@@ -146,11 +148,12 @@ const HomePage = () => {
             <p className="text-gray-400">Zadovoljstvo klijenata</p>
           </div>
         </div>
-      </section>
+      </section> */}
+      <StatsSection />
 
       {/* Preuzmi CV */}
       <section className="py-20 px-8 bg-gray-900 text-center">
-        <h2 className="text-4xl font-bold mb-6">Preuzmi moj CV</h2>
+        <h2 className="text-4xl font-bold mb-6">Preuzmi naš Cjenovnik</h2>
         <a
           href="/cv.pdf"
           download
@@ -174,7 +177,7 @@ const HomePage = () => {
 {/* Zašto izabrati mene */}
 <section className="relative bg-gray-950 py-20 px-6">
   <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-xl p-10 max-w-4xl mx-auto shadow-2xl">
-    <h2 className="text-3xl font-bold mb-4 text-white">Zašto izabrati mene?</h2>
+    <h2 className="text-3xl font-bold mb-4 text-white">Zašto izabrati nas?</h2>
     <p className="text-gray-300">
       Futuristički dizajn, moderni alati i developer kojem je stalo do performansi i stila.
     </p>
@@ -182,12 +185,12 @@ const HomePage = () => {
 </section>
 
 {/* Dugme za akciju */}
-<div className="text-center py-10">
+{/* <div className="text-center py-10">
   <button className="relative px-6 py-3 text-white font-semibold rounded-lg bg-gray-800 overflow-hidden group">
     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-cyan-500 to-blue-500 blur-sm opacity-50 group-hover:opacity-100 transition duration-300"></span>
-    <span className="relative">Kontaktiraj me</span>
+    <span className="relative">Kontaktirajte nas</span>
   </button>
-</div>
+</div> */}
 
 {/* Kontakt Sekcija */}
 {/* <section id='kontakt' className="py-20 px-8 bg-gray-900">

@@ -67,7 +67,7 @@ export default function ContactSection() {
 
   return (
     <section className="py-20 px-6 bg-gray-950">
-      <h2 className="text-4xl font-bold text-center text-white mb-12">Kontaktiraj me</h2>
+      <h2 className="text-4xl font-bold text-center text-white mb-12">Kontaktirajte nas</h2>
       <form
         onSubmit={handleSubmit}
         className="relative max-w-2xl mx-auto bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-xl shadow-2xl transition-transform hover:scale-[1.01]"

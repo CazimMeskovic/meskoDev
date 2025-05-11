@@ -13,9 +13,9 @@ export default function Navbar() {
         </div>
 
         <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-          <a href="#services" className="hover:text-white transition">Services</a>
+          <a href="#servis" className="hover:text-white transition">Servis</a>
           <a href="#portfolio" className="hover:text-white transition">Portfolio</a>
-          <a href="#testimonials" className="hover:text-white transition">Testimonials</a>
+          <a href="#onama" className="hover:text-white transition">O nama</a>
           <a href="#kontakt" className="hover:text-white transition">Contact</a>
         </nav>
 

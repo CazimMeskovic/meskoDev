@@ -40,15 +40,17 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold text-white mb-2">Brzi Linkovi</h4>
           <ul className="space-y-1">
-            <li><a href="#services" className="hover:text-blue-400">Usluge</a></li>
-            <li><a href="#portfolio" className="hover:text-blue-400">Portfolio</a></li>
-            <li><a href="#testimonials" className="hover:text-blue-400">Preporuke</a></li>
-            <li><a href="#contact" className="hover:text-blue-400">Kontakt</a></li>
+           <li><a href="#servis" className="hover:text-white transition">Servis</a></li>
+          <li><a href="#portfolio" className="hover:text-white transition">Portfolio</a></li>
+          <li><a href="#onama" className="hover:text-white transition">O nama</a></li>
+          <li><a href="#kontakt" className="hover:text-white transition">Contact</a></li>
+
+           
           </ul>
         </div>
         <div>
           <h4 className="text-lg font-semibold text-white mb-2">Kontakt</h4>
-          <p>Email: <a href="mailto:info@meskodev.com" className="hover:text-blue-400">info@meskodev.com</a></p>
+          <p>Email: <a href="mailto:info@meskodev.com" className="hover:text-blue-400">meskovic0007@gmail.com</a></p>
           <p>Lokacija: Bosna i Hercegovina</p>
         </div>
       </div>
