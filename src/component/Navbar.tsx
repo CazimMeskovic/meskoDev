@@ -16,7 +16,7 @@ export default function Navbar() {
           <a href="#servis" className="hover:text-white transition">Servis</a>
           <a href="#portfolio" className="hover:text-white transition">Portfolio</a>
           <a href="#onama" className="hover:text-white transition">O nama</a>
-          <a href="#kontakt" className="hover:text-white transition">Contact</a>
+          <a href="#kontakt" className="hover:text-white transition">Kontakt</a>
         </nav>
 
         <div className="md:hidden">
@@ -29,10 +29,10 @@ export default function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-900 px-4 pb-4 space-y-2 text-gray-300 text-center">
-          <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-white">Services</a>
+          <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-white">Servis</a>
           <a href="#portfolio" onClick={() => setIsOpen(false)} className="block hover:text-white">Portfolio</a>
-          <a href="#testimonials" onClick={() => setIsOpen(false)} className="block hover:text-white">Testimonials</a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="block hover:text-white">Contact</a>
+          <a href="#onama" onClick={() => setIsOpen(false)} className="block hover:text-white">O nama</a>
+          <a href="#kontakt" onClick={() => setIsOpen(false)} className="block hover:text-white">Kontakt</a>
         </div>
       )}
     </header>
